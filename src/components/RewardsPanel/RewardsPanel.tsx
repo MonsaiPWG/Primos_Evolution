@@ -273,6 +273,18 @@ const RewardsPanel: React.FC<RewardsPanelProps> = ({
     <div className="bg-gray-800 rounded-lg shadow-md p-6 text-white">
       <h2 className="text-2xl font-bold mb-4 uppercase">Fire dust rewards</h2>
       
+      <div className="bg-gray-700 p-6 rounded-md text-center mb-4">
+        <h3 className="text-xl font-bold mb-4">Mining Not Available</h3>
+        <p className="mb-4">Mining functionality has been moved to the Primos Games platform.</p>
+        <a 
+          href="https://app.primos.games" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
+        >
+          Visit app.primos.games
+        </a>
+      </div>
       
       {error && (
         <div className="bg-red-100 text-red-700 p-4 rounded-md mb-4">

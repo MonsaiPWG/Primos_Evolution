@@ -354,7 +354,20 @@ const NFTDisplay: React.FC<NFTDisplayProps> = ({ provider, userAddress, refreshT
       
 <h3 className="text-xl font-bold mt-6 mb-4 uppercase">Your Primos</h3>
       
-      {nfts.length === 0 && !loading ? (
+      <div className="bg-gray-700 p-6 rounded-md text-center mb-4">
+        <h3 className="text-xl font-bold mb-4">Mining Not Available</h3>
+        <p className="mb-4">Mining functionality has been moved to the Primos Games platform.</p>
+        <a 
+          href="https://app.primos.games" 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-md transition duration-300"
+        >
+          Visit app.primos.games
+        </a>
+      </div>
+      
+      {false && nfts.length === 0 && !loading ? (
         <div 
           className="text-center py-12 rounded-md flex items-center justify-center" 
           style={{
@@ -367,7 +380,7 @@ const NFTDisplay: React.FC<NFTDisplayProps> = ({ provider, userAddress, refreshT
         >
           <p className="font-bold text-white text-lg bg-black bg-opacity-50 px-4 py-2 rounded">No Primos found in your wallet</p>
         </div>
-      ) : (
+      ) : (false && 
         <div 
           className="relative py-2"
           onMouseEnter={() => setIsPaused(true)}
